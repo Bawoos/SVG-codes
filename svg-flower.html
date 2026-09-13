@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Flower</title>
+  </head>
+  <body>
+    <svg width="600" height="600" viewBox="-300 -300 600 600">
+      <g stroke="black">
+        <g id="g3" fill="none" stroke-width="2">
+          <g id="g2">
+            <ellipse id="g1" cx="100" cy="100" rx="75" ry="40" />
+            <use xlink:href="#g1" transform="rotate(30 100 100)" />
+            <use xlink:href="#g1" transform="rotate(60 100 100)" />
+          </g>
+
+          <use xlink:href="#g2" transform="rotate(90 100 100)" />
+        </g>
+      </g>
+
+      <g stroke="blue" transform="translate(80,0)">
+        <g id="g3" fill="none" stroke-width="2">
+          <g id="g2">
+            <ellipse id="g1" cx="100" cy="100" rx="75" ry="40" />
+            <use xlink:href="#g1" transform="rotate(30 100 100)" />
+            <use xlink:href="#g1" transform="rotate(60 100 100)" />
+          </g>
+
+          <use xlink:href="#g2" transform="rotate(90 100 100)" />
+        </g>
+      </g>
+
+      <g stroke="red" transform="translate(0,80)">
+        <g id="g3" fill="none" stroke-width="2">
+          <g id="g2">
+            <ellipse id="g1" cx="100" cy="100" rx="75" ry="40" />
+            <use xlink:href="#g1" transform="rotate(30 100 100)" />
+            <use xlink:href="#g1" transform="rotate(60 100 100)" />
+          </g>
+
+          <use xlink:href="#g2" transform="rotate(90 100 100)" />
+        </g>
+      </g>
+
+      <g stroke="green" transform="translate(80,80)">
+        <g id="g3" fill="none" stroke-width="2">
+          <g id="g2">
+            <ellipse id="g1" cx="100" cy="100" rx="75" ry="40" />
+            <use xlink:href="#g1" transform="rotate(30 100 100)" />
+            <use xlink:href="#g1" transform="rotate(60 100 100)" />
+          </g>
+
+          <use xlink:href="#g2" transform="rotate(90 100 100)" />
+        </g>
+      </g>
+    </svg>
+  </body>
+</html>

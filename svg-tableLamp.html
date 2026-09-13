@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Table Lamp</title>
+    <link rel="stylesheet" href="svg-tableLamp.css" />
+  </head>
+  <body>
+    <svg width="200" height="200">
+      <g transform="translate(70, 170)">
+        <g transform="rotate(-25)">
+          <!-- 1st arm -->
+          <path d="M 0 0 L 0 -70" class="arm" />
+          <circle r="5" />
+
+          <g transform="translate(0, -70)">
+            <g transform="rotate(50)">
+              <!-- 2nd arm -->
+              <path d="M 0 0 L 0 -70" class="arm" />
+              <circle r="5" />
+
+              <g transform="translate(0, -70)">
+                <g transform="rotate(45)">
+                  <!-- 3rd arm -->
+                  <path d="M 0 0 L 0 -30" class="arm" />
+                  <circle r="5" />
+
+                  <g transform="translate(0, -30)">
+                    <g transform="rotate(-90)">
+                      <!-- Head -->
+                      <path
+                        d="M -30 30 Q 0 -20 30 30 Q 0 35 -30 30"
+                        fill="gray"
+                      />
+                      <circle cx="0" cy="25" r="10" fill="gold" />
+                      <path d="M -30 30 Q 0 -20 30 30 Q 0 25 -30 30" />
+                      <rect x="-10" y="-10" width="20" height="30" rx="5" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- Base -->
+      <ellipse cx="100" cy="175" rx="30" ry="5" />
+      <ellipse cx="100" cy="170" rx="30" ry="5" fill="gray" />
+    </svg>
+  </body>
+</html>

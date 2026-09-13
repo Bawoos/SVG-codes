@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG 2113</title>
+  </head>
+  <body>
+    <svg 
+      width="800"
+      height="800"
+      viewBox="0 0 800 800"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+    <ellipse cx="216" cy="242" rx="160" ry="219" fill="#964">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          dur="4s"
+          values="0,0;-110,-140;0,0"
+          repeatCount="indefinite"
+        />
+        <animateTransform
+          attributeName="transform"
+          additive="sum"
+          type="scale"
+          dur="4s"
+          values="1;1.5;1"
+          repeatCount="indefinite"
+        />
+        <animateTransform
+          attributeName="transform"
+          additive="sum"
+          type="rotate"
+          dur="7s"
+          values="0,216 242;360 216 242"
+          repeatCount="indefinite"
+        />
+      </ellipse>
+    
+      
+    </svg>
+  </body>
+</html>
