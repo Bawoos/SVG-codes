@@ -1,53 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>SVG House</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #1a1a1a;
-    }
-    svg {
-      max-width: 400px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Paste the SVG code here -->
-  <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SVG House</title>
     <style>
-      .house-body { fill: #f2e9e4; stroke: #2b2d42; stroke-width: 4; }
-      .roof { fill: #2b2d42; transition: fill 0.3s; cursor: pointer; }
-      .roof:hover { fill: #ed6a5a; }
-      .door { fill: #d1495b; stroke: #2b2d42; stroke-width: 3; transition: fill 0.3s; cursor: pointer; }
-      .door:hover { fill: #ed6a5a; }
-      .window-pane { fill: #edf2f4; stroke: #2b2d42; stroke-width: 2; transition: fill 0.3s; }
-      .window-group:hover .window-pane { fill: #ffb703; }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #1a1a1a;
+      }
+      svg {
+        max-width: 400px;
+      }
     </style>
+  </head>
+  <body>
+    <!-- Paste the SVG code here -->
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        .house-body {
+          fill: #f2e9e4;
+          stroke: #2b2d42;
+          stroke-width: 4;
+        }
+        .roof {
+          fill: #2b2d42;
+          transition: fill 0.3s;
+          cursor: pointer;
+        }
+        .roof:hover {
+          fill: #ed6a5a;
+        }
+        .door {
+          fill: #d1495b;
+          stroke: #2b2d42;
+          stroke-width: 3;
+          transition: fill 0.3s;
+          cursor: pointer;
+        }
+        .door:hover {
+          fill: #ed6a5a;
+        }
+        .window-pane {
+          fill: #edf2f4;
+          stroke: #2b2d42;
+          stroke-width: 2;
+          transition: fill 0.3s;
+        }
+        .window-group:hover .window-pane {
+          fill: #ffb703;
+        }
+      </style>
 
-    <g class="house">
-      <rect class="house-body" x="120" y="180" width="160" height="150" />
-      <polygon class="roof" points="100,180 200,90 300,180" />
-      
-      <g class="window-group" cursor="pointer">
-        <rect class="window-pane" x="214" y="214" width="20" height="20" />
-        <rect class="window-pane" x="236" y="214" width="20" height="20" />
-        <rect class="window-pane" x="214" y="236" width="20" height="20" />
-        <rect class="window-pane" x="236" y="236" width="20" height="20" />
+      <g class="house">
+        <rect class="house-body" x="120" y="180" width="160" height="150" />
+        <polygon class="roof" points="100,180 200,90 300,180" />
+
+        <g class="window-group" cursor="pointer">
+          <rect class="window-pane" x="214" y="214" width="20" height="20" />
+          <rect class="window-pane" x="236" y="214" width="20" height="20" />
+          <rect class="window-pane" x="214" y="236" width="20" height="20" />
+          <rect class="window-pane" x="236" y="236" width="20" height="20" />
+        </g>
+
+        <g class="door-group">
+          <rect class="door" x="160" y="230" width="40" height="100" />
+          <circle cx="192" cy="280" r="3" fill="#e0a96d" />
+        </g>
       </g>
-
-      <g class="door-group">
-        <rect class="door" x="160" y="230" width="40" height="100" />
-        <circle cx="192" cy="280" r="3" fill="#e0a96d" />
-      </g>
-    </g>
-  </svg>
-
-</body>
+    </svg>
+  </body>
 </html>
