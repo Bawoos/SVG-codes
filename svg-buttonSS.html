@@ -28,6 +28,35 @@
         <use xlink:href="#button" />
         <text x="270" y="220" font-size="20" fill="green">GO</text>
       </g>
+      <path
+        id="curve"
+        stroke="black"
+        fill="none"
+        stroke-width="5"
+        d="M 110,150 C 300,80 400,300 450,100 500,-100 -90,220 110,150"
+      />
+
+      <ellipse
+        x="200"
+        y="100"
+        rx="20"
+        ry="12"
+        fill="#aaa"
+        stroke="#666"
+        stroke-width="2"
+        opacity=".8"
+      >
+        <animateMotion
+          id="One"
+          dur="2s"
+          end="stop.click"
+          fill="freeze"
+          rotate="auto"
+          repeatCount="indefinite"
+        >
+          <mpath href="#curve" />
+        </animateMotion>
+      </ellipse>
     </svg>
   </body>
 </html>

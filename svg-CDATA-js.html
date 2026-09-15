@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG 2113</title>
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <script>
+        //<![CDATA[
+        function changeFill() {
+          const C = document.getElementById("C");
+          C.setAttribute("fill", "black");
+        }
+        //]]>
+      </script>
+
+      <circle
+        id="C"
+        cx="80"
+        cy="100"
+        r="22"
+        fill="grey"
+        onclick="changeFill()"
+      />
+    </svg>
+  </body>
+</html>
